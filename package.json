@@ -41,7 +41,8 @@
     ],
     "src/**/*.{js,jsx,json,css,scss}": [
       "prettier --write",
-      "git add"
+      "git add",
+      "git commit --amend"
     ]
   },
   "eslintConfig": {
