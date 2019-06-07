@@ -15,6 +15,7 @@
   "author": "Alvaro Yuste (alvaroyuste.com)",
   "license": "MIT",
   "dependencies": {
+    "classnames": "^2.2.6",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   },
@@ -49,7 +50,22 @@
       "browser": true
     },
     "rules": {
-      "linebreak-style": "off"
+      "linebreak-style": "off",
+      "jsx-a11y/label-has-for": [
+        2,
+        {
+          "components": [
+            "Label"
+          ],
+          "required": {
+            "some": [
+              "nesting",
+              "id"
+            ]
+          },
+          "allowChildren": false
+        }
+      ]
     }
   },
   "prettier": {
