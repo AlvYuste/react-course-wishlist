@@ -4,7 +4,8 @@
   "description": "An exercise for an introduction to React",
   "main": "index.js",
   "scripts": {
-    "start": "parcel ./src/index.html --open"
+    "start": "parcel ./src/index.html --open",
+    "lint": "eslint --fix src/**/*.{js,jsx}"
   },
   "keywords": [
     "parcel",
@@ -17,6 +18,11 @@
     "react-dom": "^16.8.6"
   },
   "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.17.3",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.13.0",
     "parcel-bundler": "^1.12.3"
   }
 }
