@@ -23,6 +23,27 @@
     "eslint-plugin-import": "^2.17.3",
     "eslint-plugin-jsx-a11y": "^6.2.1",
     "eslint-plugin-react": "^7.13.0",
+    "husky": "^2.4.0",
+    "lint-staged": "^8.2.0",
     "parcel-bundler": "^1.12.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx}": [
+      "npm run lint"
+    ]
+  },
+  "eslintConfig": {
+    "extends": "airbnb",
+    "env": {
+      "browser": true
+    },
+    "rules": {
+      "linebreak-style": "off"
+    }
   }
 }
