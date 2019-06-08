@@ -8,7 +8,7 @@ const WishList = ({ wishes, onWishesChange }) => (
       <WishItem
         text={text}
         done={done}
-        onDoneChange={value => {
+        onDoneChange={(value) => {
           const updatedWishes = [...wishes];
           updatedWishes[i].done = value;
           onWishesChange(updatedWishes);

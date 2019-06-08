@@ -12,7 +12,7 @@ const WishInput = ({ defaultValue, onNewWish }) => {
         className="wish-input__field"
         value={newWishText}
         onChange={e => setNewWishText(e.target.value)}
-        onKeyUp={e => {
+        onKeyUp={(e) => {
           if (e.key === 'Enter' && newWishText.length) {
             onNewWish(createWish(newWishText));
             setNewWishText(defaultValue);
